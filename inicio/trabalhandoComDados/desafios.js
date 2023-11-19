@@ -7,11 +7,11 @@
 // lembre-se da estrutura dos dados (Entradada de dados, processamento e sai)
 // tendo em mente que o raio da circunferência é de R = 16
 
+console.log(p)
 const Pi = 3.14;
 let raiz = 16
 console.log(raiz)
-raiz * raiz
-const resul = 
-console.log(resul)
+resul = raiz * raiz
+console.log(resul*Pi)
 
 
