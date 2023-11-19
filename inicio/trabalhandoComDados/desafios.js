@@ -7,11 +7,17 @@
 // lembre-se da estrutura dos dados (Entradada de dados, processamento e sai)
 // tendo em mente que o raio da circunferência é de R = 16
 
-console.log(p)
+
 const Pi = 3.14;
-let raiz = 16
-console.log(raiz)
-resul = raiz * raiz
+let R = 16
+const resul = R * R
 console.log(resul*Pi)
+
+function areaCirculo (Pi, R) {
+  let Raio = R * R
+  return Raio * Pi
+}
+
+console.log(areaCirculo(Pi, R))
 
 
