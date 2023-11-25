@@ -28,30 +28,53 @@
 // c) Horas
 // d) Minutos
 
-const dataNascimento = new Date('1998-02-24')
-console.log(dataNascimento)
+// const dataNascimento = new Date('1998-02-24')
+// console.log(dataNascimento)
 
-const dataAtual = new Date();
-console.log(dataAtual)
-
-
-const diferencaEmMilissegundos = dataAtual - dataNascimento;
-const diferencaEmSegundos = diferencaEmMilissegundos / 1000;
-const diferencaEmMinutos = diferencaEmSegundos / 60;
-const diferencaEmHoras = diferencaEmMinutos / 60;
-const diferencaEmDias = diferencaEmHoras / 24;
-const diferencaEmMeses = diferencaEmDias / 30;
-
-const anos = Math.floor(diferencaEmDias / 365);
-const meses = Math.floor(diferencaEmMeses);
-const dias = Math.floor(diferencaEmDias % 365);
-const horas = Math.floor(diferencaEmHoras % 24);
-const minutos = Math.floor(diferencaEmMinutos % 60);
+// const dataAtual = new Date();
+// console.log(dataAtual)
 
 
-console.log(`Idade: ${anos} anos, ${meses} meses, ${dias} dias, ${horas} horas, ${minutos} minutos`);
+// const diferencaEmMilissegundos = dataAtual - dataNascimento;
+// const diferencaEmSegundos = diferencaEmMilissegundos / 1000;
+// const diferencaEmMinutos = diferencaEmSegundos / 60;
+// const diferencaEmHoras = diferencaEmMinutos / 60;
+// const diferencaEmDias = diferencaEmHoras / 24;
+// const diferencaEmMeses = diferencaEmDias / 30;
+
+// const anos = Math.floor(diferencaEmDias / 365);
+// const meses = Math.floor(diferencaEmMeses);
+// const dias = Math.floor(diferencaEmDias % 365);
+// const horas = Math.floor(diferencaEmHoras % 24);
+// const minutos = Math.floor(diferencaEmMinutos % 60);
 
 
+// console.log(`Idade: ${anos} anos, ${meses} meses, ${dias} dias, ${horas} horas, ${minutos} minutos`);
+
+// ************************************************ Atividade 03 **********************************************************
+
+
+// 3- Crie um algoritmo para calcular a media de um aluno 
+// considere que o aluno possui 4 notas
+
+const notas = [5,5,2,10]
+
+
+function mediaAluno (notas) {
+
+    const arr = notas.reduce((acc, ele)=> acc + ele)
+    const media = arr / notas.length
+
+    if(media === 0) {
+        return "Reprovado!"
+    } else if (media <= 5) {
+        return "Recuperação"
+    } else {
+        return "Aprovado!"
+    }
+}
+
+console.log(mediaAluno(notas))
 
 
 

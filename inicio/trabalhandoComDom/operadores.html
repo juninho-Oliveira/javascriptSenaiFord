@@ -36,7 +36,8 @@
 
         //Entrada do dados
         const nomePessoa = "Junior"
-        const idadePessoa = 25
+        const idadePessoa = 98
+
 
         //processamento dos dados
         let idadeMeses = idadePessoa * Meses
@@ -44,8 +45,21 @@
         let idadeHoras = idadeDias * Horas
         let idadeMinutos = idadeHoras * Minutos
 
-        console.log(`Nome: ${nomePessoa}, idade em meses: ${idadeMeses}, idade em dias: ${idadeDias}, idade em horas: ${idadeHoras}, idade em minutos ${idadeMinutos}`);
+        //Decisões (if -else)
 
+        // if (idadePessoa <= 0 || idadePessoa >= 100 ){
+        //     alert("Não pode ser 0")
+        // } else {
+        //     console.log(`Nome: ${nomePessoa}, idade: ${idadePessoa}, idade em meses: ${idadeMeses}, idade em dias: ${idadeDias}, idade em horas: ${idadeHoras}, idade em minutos ${idadeMinutos}`);
+        // }
+
+        idadePessoa <= 0 || idadePessoa >= 100  ? alert("Não pode ser 0") : 
+        console.log(`Nome: ${nomePessoa}, 
+        idade: ${idadePessoa}, 
+        idade em meses: ${idadeMeses}, 
+        idade em dias: ${idadeDias}, 
+        idade em horas: ${idadeHoras}, 
+        idade em minutos ${idadeMinutos}`)
 
 
     </script>
