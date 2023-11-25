@@ -57,7 +57,7 @@
 // 3- Crie um algoritmo para calcular a media de um aluno 
 // considere que o aluno possui 4 notas
 
-const notas = [5,5,2,10]
+const notas = [5,5,5,7]
 
 
 function mediaAluno (notas) {
