@@ -69,14 +69,31 @@ function mediaAluno (notas) {
         return "Reprovado!"
     } else if (media <= 5) {
         return "Recuperação"
-    } else {
-        return "Aprovado!"
     }
+    
+    return "Aprovado!"
+    
 }
 
 console.log(mediaAluno(notas))
 
 
+const n1 = 10//parseFloat(prompt("Digite a primeira nota ?"))//0;
+const n2 = 5//parseFloat(prompt("Digite a segunda nota ?"))//0;
+const n3 = 5//parseFloat(prompt("Digite a terceira nota ?"))//0;
+const n4 = 10//parseFloat(prompt("Digite a quarta nota ?"))//0;
+
+
+const media = (n1+n2+n3+n4)/4
+console.log(media)
+
+if (media == 0) {
+    console.log("Reprovado")
+} else if (media <= 5 ) {
+    console.log("Recuperação")
+} else {
+    console.log("Aprovado")
+}
 
 
 
