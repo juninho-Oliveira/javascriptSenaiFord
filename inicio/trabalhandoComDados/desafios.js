@@ -21,3 +21,10 @@ function areaCirculo (Pi, R) {
 console.log(areaCirculo(Pi, R))
 
 
+// 1- Crie um algoritmo que calcule a idade de uma pessoa em 
+// a) Meses
+// b) Dias
+// c) Horas
+// d) Minutos
+
+

@@ -7,13 +7,11 @@ variáveis, operadores aritméticos, concatenação, etc.
 lembre-se da estrutura dos dados (Entrada de dados, Processamento e Saída de dados)
 tendo em mente que o raio da circunferência é de R = 16
 
+## 2 - Segundo desafio 
 
-entrada de dados
+Crie um algoritmo que calcule a idade de uma pessoa em 
 
-const raioCirculo = 16
-
-processamento de dados 
-const resultadoRaio = Math.PI * (raioCirculo * raioCirculo)
-
-saida de dados
-console.log(resultadoRaio.toFixed(2) + " cm²");
+a) Meses <br>
+b) Dias <br>
+c) Horas <br>
+d) Minutos <br>
