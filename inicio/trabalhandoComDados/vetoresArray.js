@@ -77,3 +77,19 @@ console.log(MapArray2)
 
 
 // 6- foreach
+const foreachArray = [100, 10, 15, 20, 25, 30, 35];
+
+foreachArray.forEach((ele, index)=> console.log(`valor: ${ele}, indice: ${index}`))
+
+//sort
+//Crie um array de nomes e em seguida organize eles em ordem alfabetica 
+const sortArray = [ 'janeiro','fevereiro','março','abril','Janeiro'];
+
+console.log(sortArray)
+
+
+console.log(sortArray.sort());
+
+
+
+
