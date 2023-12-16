@@ -58,6 +58,17 @@
 
                     case 3:
 
+                        let nomeAtualizar = prompt(`Digite o nome para atualizar: `);
+
+                        let contatoAtualizado = agenda.find((ele) => ele.nome === nomeAtualizar)
+
+                        if (contatoAtualizado) {
+                            contatoAtualizado.telefone = prompt("Informe o seu numero de celular: ")
+                        } else {
+                            alert(`Nenhum usuário foi encontrado no sistema!`)
+                        }
+
+
                         break;
 
                     case 4:
