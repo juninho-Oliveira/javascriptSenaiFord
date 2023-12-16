@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+</head>
+
+<body>
+    <main>
+
+        <script>
+            // Ecercicio 3: Agenda de contatos com edição
+            // Crie uma agenda de contatos que permite adicionar 
+            // Visualizar editar e excluir contatos
+            // ultileze switch-case, while e estruturas condicionais para
+            //gerenciar operações.
+
+            let escolhaUsuario;
+            const dataAtual = new Date();
+            dataAtual.toLocaleString('pt-BR', { timezone: 'UTC' });
+            let agenda = [];//{nome: "junior", telefone: 11985615818, data: "24/02/1998"}
+
+            while (escolhaUsuario !== 5) {
+
+                escolhaUsuario = parseInt(prompt(`
+                Escolha uma opção abaixo:
+              ---------------------------------
+                [1] Cadastrar um usuário...
+                [2] Visualizar um usuário...
+                [3] Atualizar um usuário...
+                [4] Excluir um usuário...
+                [5] sair do programa CRUD...
+            `));
+
+
+                switch (escolhaUsuario) {
+                    case 1:
+                        let nome = prompt(`Informe o seu primeiro nome: `);
+                        let telefone = prompt(`Informe seu numero de telefone:`);
+                        //let dataNascimento = Date ();
+
+                        agenda.push({ nome, telefone, dataAtual })
+                        console.log(agenda)
+
+                        break;
+
+                    case 2:
+                        let listaDeContatos = 'Lista de contatos \n';
+
+                        for (item of agenda) {
+
+                            listaDeContatos += `Nome: ${item.nome}, Contato: ${item.telefone}\n`
+                        }
+                        alert(listaDeContatos)
+                        break;
+
+                    case 3:
+
+                        break;
+
+                    case 4:
+
+                        break;
+
+                    case 5:
+
+                        break;
+
+                    default:
+                        console.log(`erro numero invalido`)
+                        break;
+                }
+            }
+        </script>
+
+    </main>
+</body>
+
+</html>
