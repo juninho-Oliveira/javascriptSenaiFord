@@ -72,6 +72,18 @@
                         break;
 
                     case 4:
+                        let nomeExclui = prompt(`Digite o nome para excluir: `)
+
+                        let ContatoBuscadoExcluir = agenda.findIndex((deleteUser) => deleteUser.nome === nomeExclui)
+                        
+                        
+                            if (ContatoBuscadoExcluir!== -1) {
+
+                                agenda.splice(ContatoBuscadoExcluir, 1);
+
+                            } else {
+                                alert(`Nenhum usuário foi encontrado no sistema!`)
+                            }
 
                         break;
 
