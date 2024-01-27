@@ -49,12 +49,15 @@ const getViaCep = async () => {
 getViaCep()
 
 function preencherFormulario(dados) {
-    document.getElementById('endereco').value =dados.logradouro;
+    document.getElementById('endereco').value = dados.logradouro;
     document.getElementById('bairro').value = dados.bairro;
     document.getElementById('cidade').value = dados.localidade;
     document.getElementById('estado').value = dados.uf;
 }
 
+
+document.getElementById('cep')
+    .addEventListener('focusout', getViaCep);
 
 /*function preencherFormulario(dados) {
 
