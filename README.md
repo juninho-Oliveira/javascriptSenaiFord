@@ -20,6 +20,8 @@ d) Minutos <br>
 ### Projeto ViaCEP
 Este projeto é uma aplicação web simples que permite aos usuários obter informações de endereço ao inserir um CEP brasileiro. Ele utiliza a API ViaCEP para buscar e exibir os detalhes do endereço correspondente.
 
+<a href="https://javascript-senai-ford-gnuz.vercel.app/">Deply no Vercel</a>
+
 ### Estrutura do Projeto
 
 - Arquivo HTML (index.html):
