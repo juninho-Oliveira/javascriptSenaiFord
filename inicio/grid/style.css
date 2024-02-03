@@ -126,4 +126,52 @@ h1{
     font-size: 1.5rem;
 }
 
+.card-sidenav {
+    height: 110vh;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-sidenav__card-style{
+    height: 95%;
+    border-radius: 18px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.8);
+    padding: 5px;
+}
+
+.card-sidenav__card-style>button{
+    height: 3em;
+    width: 10em;
+    border-radius: 8px;
+    margin-top: 8em;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-inline-start: 14em;
+}
+
+.item{
+    grid-area: "item";
+    max-width: 350px;
+    min-height: 250px;
+
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.footer{
+    grid-area: "footer";
+    grid-column: footer;
+
+    width: auto;
+    height: 350px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+
+
+
 
